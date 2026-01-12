@@ -25,7 +25,7 @@ export default function Home() {
             className="object-contain"
           />
           <div className="!mt-[20px]">
-            <p className="text-[12px] font-[400] font-[var(--font-noto-sans)]">U.S. DEPARTMENT OF THE TREASURY</p>
+            <p className="text-[13px] font-[400] font-[var(--font-noto-sans)] !pt-[3px]">U.S. DEPARTMENT OF THE TREASURY</p>
             <h1 style={{ fontFamily: 'var(--font-kode-mono)' }} className="text-[36px] font-bold font-[var(--font-kode-mono)]">CORE36</h1>
           </div>
         </div>
@@ -36,7 +36,7 @@ export default function Home() {
 
       {/* Main Content Area - Increased padding to match screenshot gap */}
       <main className="flex flex-col items-center justify-center py-20 w-full max-w-[1157px]">
-        <div className="relative w-full aspect-[1.5/1]">
+        <div className="relative w-full aspect-[1.5/1] !mt-[-100px]">
         <Lottie 
              animationData={treasuryAnimation} 
              loop={true} 
@@ -47,13 +47,13 @@ export default function Home() {
 
       {/* Footer - Centered text and large vector at the bottom */}
       <footer className="w-full flex flex-col items-center mt-auto">
-        <div className="text-center mb-16">
-          <h2 style={{ fontFamily: 'var(--font-kode-mono)' }} className="text-[40px] font-bold font-[var(--font-noto-sans)] mb-4 tracking-tight">CORE36</h2>
-          <p style={{ fontFamily: 'var(--font-kode-mono)' }} className="text-[24px] font-[400] font-[var(--font-noto-sans)]">..\Treasury Technical Core</p>
+        <div className="text-center mb-16 !mt-[-100px] !pb-[80px]">
+          <h2 style={{ fontFamily: 'var(--font-kode-mono)' }} className="text-[40px] font-bold font-[var(--font-noto-sans)] !mb-[10px] tracking-tight">CORE36</h2>
+          <p style={{ fontFamily: 'var(--font-kode-mono)' }} className="!text-[26px] font-[400] font-[var(--font-noto-sans)] tracking-[3px]">..\Treasury Technical Core</p>
         </div>
         
         {/* Vector and Dot Pattern Area */}
-        <div className="w-full relative flex flex-col items-center top-[20px]">
+        <div className="w-full relative flex flex-col items-center top-[25px]">
           <Image
             src="/Vector (1).png"
             alt="Vector Graphic"

@@ -1,23 +1,50 @@
+'use client';
 import Image from "next/image";
+import { useState } from "react";
 
 export default function ManifestSection() {
+  const [isPlaying, setIsPlaying] = useState(false);
   return (
     
        
-    <section className="min-h-screen bg-[#D9D9DF] text-[#161519]  !py-24 !px-6 flex flex-col items-center !pb-[300px]">
+    <section className="min-h-screen bg-[#D9D9DF] text-[#161519] !py-24 !px-6 flex flex-col items-center !pb-[300px] !pt-[120px]">
     
       {/* 1. TOP IMAGE AREA */}
       {/* This is where you put your file. The blue label sits on top of it. */}
       <div className="relative w-full max-w-[974px] mb-20">
-        <div className="relative w-full aspect-[16/9] bg-black width-[974px] !height-[584px]">
-          <Image 
-            src="/video.png" 
-            alt="Treasury Technical Core Detail"
-            fill
-            className="object-cover"
-            
-          />
-        </div>
+                <div className="relative w-full max-w-[974px] aspect-[16/9] bg-black overflow-hidden group">
+                {!isPlaying ? (
+                <>
+                    {/* The Placeholder Image */}
+                    <Image 
+                    src="/video.png" 
+                    alt="Treasury Technical Core Detail"
+                    fill
+                    className="object-cover opacity-80 group-hover:opacity-60 transition-opacity duration-300"
+                    />
+                    
+                    {/* Play Button Overlay */}
+                    <button 
+                    onClick={() => setIsPlaying(true)}
+                    className="absolute inset-0 flex items-center justify-center"
+                    >
+                    <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm border border-white/40 hover:scale-110 transition-transform">
+                        <div className="w-0 h-0 border-t-[15px] border-t-transparent border-l-[25px] border-l-white border-b-[15px] border-b-transparent ml-2" />
+                    </div>
+                    </button>
+                </>
+                ) : (
+                /* The Actual Video Embed (YouTube Placeholder) */
+                <iframe
+                    className="absolute inset-0 w-full h-full"
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
+                    title="Video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                ></iframe>
+                )}
+            </div>
         </div>
         
        

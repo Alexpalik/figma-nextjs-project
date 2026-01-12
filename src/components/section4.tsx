@@ -6,10 +6,10 @@ export default function SelectivitySection() {
     <section className="bg-[#D9D9DF] text-[#161519] w-full flex flex-col items-center py-24 relative overflow-hidden">
       
       {/* 1. Main Content Area */}
-      <div className="w-full max-w-[971px] !px-6 !py-[100px] !mb-24">
+      <div className="w-full max-w-[971px] !px-6 !py-[100px] !mb-24 !pt-[200px]">
         
         {/* Header - Blue Box */}
-        <div className="!mb-12">
+        <div className="!mb-[80px]">
           <div className="bg-[#0053A2] !px-[16px] !py-[8px] inline-block">
             <h2 style={{ fontFamily: 'var(--font-kode-mono)' }} className="text-[#D5D5DC] font-mono !text-[24px] tracking-[0.2em]  font-bold">
               Selectivity
@@ -109,7 +109,7 @@ function PartnerCell({ name, pattern }: { name: string, pattern: 'diagonal' | 'd
       )}
 
       {/* 2. The Text (Centered) */}
-      <span className="relative z-10 font-roboto-mono text-[13px] tracking-widest text-black uppercase text-center font-bold">
+      <span className="relative z-10 font-roboto-mono text-[14px] tracking-widest text-[#000000] uppercase text-center font-[400]">
         {name}
       </span>
 
