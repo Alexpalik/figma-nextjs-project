@@ -55,13 +55,13 @@ export default function SelectivitySection() {
       <div className="w-full flex justify-center">
         <div className="flex flex-wrap justify-center border-t border-l border-[#0053A2]">
           
-          <PartnerCell name="ElevenLabs" pattern="diagonal" />
+          <PartnerCell name="ElevenLabs" pattern="diagonal1" />
           <PartnerCell name="Anthropic" pattern="plain" />
           <PartnerCell name="ASML" pattern="diagonal" />
           <PartnerCell name="Tesla" pattern="dots" />
-          <PartnerCell name="Oxford University" pattern="diagonal" />
+          <PartnerCell name="Oxford University" pattern="diagonal3" />
           <PartnerCell name="Harvard University" pattern="plain" />
-          <PartnerCell name="Stanford University" pattern="diagonal" />
+          <PartnerCell name="Stanford University" pattern="diagonal3" />
 
         </div>
       </div>
@@ -83,7 +83,7 @@ export default function SelectivitySection() {
 }
 
 // --- Helper Component ---
-function PartnerCell({ name, pattern }: { name: string, pattern: 'diagonal' | 'dots' | 'plain' }) {
+function PartnerCell({ name, pattern }: { name: string, pattern: 'diagonal' | 'dots' | 'plain' | 'diagonal1' | 'diagonal3' }) {
   return (
     // Added w-[205px] and h-[71px] here
     // Added border-r and border-b to maintain the grid lines
@@ -98,6 +98,27 @@ function PartnerCell({ name, pattern }: { name: string, pattern: 'diagonal' | 'd
           }} 
         />
       )}
+      {pattern === 'diagonal1' && (
+        <div 
+          className="absolute inset-0 opacity-30" 
+          style={{ 
+            backgroundImage: 'repeating-linear-gradient(135deg, #0053A2 0, #0053A2 1px, transparent 0, transparent 10px)'
+          }} 
+        />
+      )}
+      {pattern === 'diagonal3' && (
+        <div 
+          className="absolute inset-0 opacity-30" 
+          style={{ 
+            backgroundImage: "url('/Rectangle 101.png')",
+            
+            backgroundPosition: 'center',
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+          }} 
+        />
+      )}
+      
       
       {pattern === 'dots' && (
         <div 
