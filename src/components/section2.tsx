@@ -37,7 +37,7 @@ export default function ManifestSection() {
                 /* The Actual Video Embed (YouTube Placeholder) */
                 <iframe
                     className="absolute inset-0 w-full h-full"
-                    src="https://www.youtube.com/embed/rhniH1Nkof8"
+                    src="https://www.youtube.com/embed/pwO-9cbZDsA"
                     title="Video player"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
