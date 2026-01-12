@@ -1,14 +1,22 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Kode_Mono, Roboto_Mono, Noto_Sans } from "next/font/google";
 import "./globals.css";
+import ManifestSection from "@/components/section2";
+import TechnicalCoreSection from "@/components/section3";
+import SelectivitySection from "@/components/section4";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const kodeMono = Kode_Mono({
+  variable: "--font-kode-mono",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const robotoMono = Roboto_Mono({
+  variable: "--font-roboto-mono",
+  subsets: ["latin"],
+});
+
+const notoSans = Noto_Sans({
+  variable: "--font-noto-sans",
   subsets: ["latin"],
 });
 
@@ -25,9 +33,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${kodeMono.variable} ${robotoMono.variable} ${notoSans.variable} antialiased`}
       >
         {children}
+        <ManifestSection />
+        <TechnicalCoreSection />
+        <SelectivitySection />
       </body>
     </html>
   );

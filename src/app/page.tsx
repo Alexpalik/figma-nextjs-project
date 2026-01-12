@@ -1,65 +1,72 @@
+'use client';
 import Image from "next/image";
+import ManifestSection from "@/components/section2";
+import Lottie from "lottie-react";
+import treasuryAnimation from "@/treasury_animation.json";
+
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file. hello
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className="min-h-screen bg-[#0053A2] text-white flex flex-col items-center"
+      style={{
+       backgroundColor: '#0053A2',
+       backgroundBlendMode: 'overlay',
+       opacity: 0.97 
+     }}>
+     
+      {/* Header - Fixed: justify-between and exact max-width matching the GIF area */}
+      <header className="flex items-center justify-between w-full max-w-[1157px] px-8 py-12 !pt-[30px]">
+        <div className="flex items-center gap-4">
+          <Image
+            src="/logo 1.png"
+            alt="Department of the Treasury Logo"
+            width={70}
+            height={70}
+            className="object-contain"
+          />
+          <div className="!mt-[20px]">
+            <p className="text-[12px] font-[400] font-[var(--font-noto-sans)]">U.S. DEPARTMENT OF THE TREASURY</p>
+            <h1 style={{ fontFamily: 'var(--font-kode-mono)' }} className="text-[36px] font-bold font-[var(--font-kode-mono)]">CORE36</h1>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+        <button className="border border-white  border-[0.5px] px-[10px] py-[5px] text-xs tracking-widest font-[var(--font-noto-sans)] hover:bg-white/10  max-w-[154px] h-[41px] w-full text-[14px] transition-colors shadow-[3px_3px_0px_0px_#2100C7]">
+          NOMINATION
+        </button>
+      </header>
+
+      {/* Main Content Area - Increased padding to match screenshot gap */}
+      <main className="flex flex-col items-center justify-center py-20 w-full max-w-[1157px]">
+        <div className="relative w-full aspect-[1.5/1]">
+        <Lottie 
+             animationData={treasuryAnimation} 
+             loop={true} 
+             className="w-full h-full"
+           />
         </div>
       </main>
+
+      {/* Footer - Centered text and large vector at the bottom */}
+      <footer className="w-full flex flex-col items-center mt-auto">
+        <div className="text-center mb-16">
+          <h2 style={{ fontFamily: 'var(--font-kode-mono)' }} className="text-[40px] font-bold font-[var(--font-noto-sans)] mb-4 tracking-tight">CORE36</h2>
+          <p style={{ fontFamily: 'var(--font-kode-mono)' }} className="text-[24px] font-[400] font-[var(--font-noto-sans)]">..\Treasury Technical Core</p>
+        </div>
+        
+        {/* Vector and Dot Pattern Area */}
+        <div className="w-full relative flex flex-col items-center top-[20px]">
+          <Image
+            src="/Vector (1).png"
+            alt="Vector Graphic"
+            width={1400}
+            height={300}
+            className="w-full h-auto opacity-80"
+          />
+          
+          
+        </div>
+      </footer>
+      
     </div>
+    
   );
 }
