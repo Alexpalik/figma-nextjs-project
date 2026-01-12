@@ -13,6 +13,7 @@ const kodeMono = Kode_Mono({
 const robotoMono = Roboto_Mono({
   variable: "--font-roboto-mono",
   subsets: ["latin"],
+  weight: ["400"],
 });
 
 const notoSans = Noto_Sans({

@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function SelectivitySection() {
   return (
@@ -42,9 +43,9 @@ export default function SelectivitySection() {
           </p>
 
           <div className="flex justify-end !pt-8">
-            <button className="border border-[#0053A2] text-[#0053A2] !px-[16px] !py-[8px] text-[14px] tracking-[0.2em] font-mono hover:bg-[#0053A2] hover:text-white transition-all shadow-[3px_3px_0px_0px_rgba(0,83,162,0.2)] uppercase">
-              Nomination
-            </button>
+          <Link href="https://airtable.com/appioeKoEbAu7HxPJ/pagDslvnONSZ71fsX/form"  className="flex justify-center items-center border border-[#0053A2] text-[#0053A2] !px-[16px] !py-[8px] text-[14px] tracking-[0.2em] font-mono hover:bg-[#0053A2] hover:text-white transition-all uppercase font-[var(--font-noto-sans)] max-w-[154px] h-[41px] w-full bg-transparent shadow-[3px_3px_0px_0px_#0053a233]">
+            NOMINATION
+            </Link>
           </div>
         </div>
       </div>

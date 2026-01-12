@@ -3,6 +3,7 @@ import Image from "next/image";
 import ManifestSection from "@/components/section2";
 import Lottie from "lottie-react";
 import treasuryAnimation from "@/treasury_animation.json";
+import Link from "next/link";
 
 
 export default function Home() {
@@ -29,14 +30,28 @@ export default function Home() {
             <h1 style={{ fontFamily: 'var(--font-kode-mono)' }} className="text-[36px] font-bold font-[var(--font-kode-mono)]">CORE36</h1>
           </div>
         </div>
-        <button className="border border-white  border-[0.5px] px-[10px] py-[5px] text-xs tracking-widest font-[var(--font-noto-sans)] hover:bg-white/10  max-w-[154px] h-[41px] w-full text-[14px] transition-colors shadow-[3px_3px_0px_0px_#2100C7]">
-          NOMINATION
-        </button>
+        <Link href="https://airtable.com/appioeKoEbAu7HxPJ/pagDslvnONSZ71fsX/form"  
+        style={{ fontFamily: 'var(--font-roboto-mono)' }}
+        className="
+          flex
+          border border-white border-[0.5px] 
+          !px-[10px] !py-[5px] 
+          text-center
+          justify-center
+          items-center
+          !font-[400]
+          max-w-[154px] h-[41px] w-full !text-[15px]
+          shadow-[3px_3px_0px_0px_#2100C7]
+          hover:bg-[white] hover:text-[#0053A2] transition-all"
+          
+      
+        >NOMINATION
+        </Link>
       </header>
 
       {/* Main Content Area - Increased padding to match screenshot gap */}
       <main className="flex flex-col items-center justify-center py-20 w-full max-w-[1157px]">
-        <div className="relative w-full aspect-[1.5/1] !mt-[-100px]">
+        <div className="relative w-full aspect-[1.5/1]">
         <Lottie 
              animationData={treasuryAnimation} 
              loop={true} 
