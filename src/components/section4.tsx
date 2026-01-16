@@ -53,7 +53,14 @@ export default function SelectivitySection() {
       {/* 2. Partners Logo Strip - Fixed Dimensions 205x71 */}
       {/* We use border-t and border-l on the container, and border-r/border-b on items to create a perfect grid even when wrapping */}
       <div className="w-full flex justify-center">
-        <div className="flex flex-wrap justify-center border-t border-l border-[#0053A2]">
+      <div
+        className="
+          grid
+          grid-cols-1
+          xl:grid-cols-7
+          border-[1px] border-[#0053A2]
+        "
+      >
           
           <PartnerCell name="ElevenLabs" pattern="diagonal1" />
           <PartnerCell name="Anthropic" pattern="plain" />
@@ -87,7 +94,7 @@ function PartnerCell({ name, pattern }: { name: string, pattern: 'diagonal' | 'd
   return (
     // Added w-[205px] and h-[71px] here
     // Added border-r and border-b to maintain the grid lines
-    <div className="relative w-[205px] h-[71px] border-r border-b border-[#0053A2] bg-[#D9D9DF] flex items-center justify-center overflow-hidden group">
+    <div className="relative w-[205px] h-[71px]  bg-[#D9D9DF] flex items-center justify-center overflow-hidden group border-[1px] border-[#0053A2]">
       
       {/* 1. Background Pattern Layer */}
       {pattern === 'diagonal' && (

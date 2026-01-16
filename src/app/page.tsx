@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#0053A2] text-white flex flex-col items-center"
+    <div className="min-h-screen bg-[#0053A2] text-white flex flex-col justify-between xl:justify-normal items-center"
       style={{
        backgroundColor: '#0053A2',
        backgroundBlendMode: 'overlay',
@@ -16,7 +16,7 @@ export default function Home() {
      }}>
      
       {/* Header - Fixed: justify-between and exact max-width matching the GIF area */}
-      <header className="flex items-center justify-between w-full max-w-[1157px] px-8 py-12 !pt-[30px]">
+      <header className="flex flex-col md:flex-row gap-[15px] md:gap-0 items-center justify-between w-full max-w-[1157px] px-8 py-12 !pt-[30px] !py-[10px]">
         <div className="flex items-center gap-4">
           <Image
             src="/logo 1.png"
@@ -62,7 +62,7 @@ export default function Home() {
 
       {/* Footer - Centered text and large vector at the bottom */}
       <footer className="w-full flex flex-col items-center mt-auto">
-        <div className="text-center mb-16 !mt-[-100px] !pb-[80px]">
+        <div className="text-center mb-16 md:!mt-[-100px] !pb-[80px]">
           <h2 style={{ fontFamily: 'var(--font-kode-mono)' }} className="text-[40px] font-bold font-[var(--font-noto-sans)] !mb-[10px] tracking-tight">CORE36</h2>
           <p style={{ fontFamily: 'var(--font-kode-mono)' }} className="!text-[26px] font-[400] font-[var(--font-noto-sans)] tracking-[3px]">..\Treasury Technical Core</p>
         </div>
