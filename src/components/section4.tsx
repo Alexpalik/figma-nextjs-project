@@ -19,7 +19,7 @@ export default function SelectivitySection() {
         </div>
 
         {/* Text Content */}
-        <div className="space-y-10 font-[var(--font-noto-sans)] leading-relaxed text-[15px] md:text-[19px] font-[300]">
+        <div className="space-y-10 font-[var(--font-noto-sans)] leading-relaxed text-[15px] text-[19px] font-[300]">
           <p className="font-[300] !mb-[30px]">
             The process will move swiftly on a rolling basis, with introductory calls taking place within 48 hours after nomination. We anticipate concluding the full process within one week.
           </p>
@@ -32,8 +32,8 @@ export default function SelectivitySection() {
               "Stage 4: Selection"
             ].map((item, index) => (
               <li key={index} className="flex items-start ">
-                <span className="text-[#0053A2] font-mono font-bold mr-2 md:text-[19px] !font-[400]">•</span>
-                <span className="text-[#0053A2] font-mono md:text-[19px] !font-[400]">{item}</span>
+                <span className="text-[#0053A2] font-mono font-bold mr-2 text-[19px] !font-[400]">•</span>
+                <span className="text-[#0053A2] font-mono text-[19px] !font-[400]">{item}</span>
               </li>
             ))}
           </ul>
@@ -43,7 +43,7 @@ export default function SelectivitySection() {
           </p>
 
           <div className="flex justify-end !pt-8">
-          <Link href="https://airtable.com/appioeKoEbAu7HxPJ/pagDslvnONSZ71fsX/form"  className="flex justify-center items-center border border-[#0053A2] text-[#0053A2] !px-[16px] !py-[8px] text-[14px] tracking-[0.2em] font-mono hover:bg-[#0053A2] hover:text-white transition-all uppercase font-[var(--font-noto-sans)] max-w-[154px] h-[41px] w-full bg-transparent shadow-[3px_3px_0px_0px_#0053a233]">
+          <Link href="https://5adne.share.hsforms.com/2mJaj2LW8T-iKhXQGwuztlQ"  className="flex justify-center items-center border border-[#0053A2] text-[#0053A2] !px-[16px] !py-[8px] text-[14px] tracking-[0.2em] font-mono hover:bg-[#0053A2] hover:text-white transition-all uppercase font-[var(--font-noto-sans)] max-w-[154px] h-[41px] w-full bg-transparent shadow-[3px_3px_0px_0px_#0053a233]">
             NOMINATION
             </Link>
           </div>

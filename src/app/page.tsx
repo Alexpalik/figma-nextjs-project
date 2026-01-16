@@ -30,7 +30,7 @@ export default function Home() {
             <h1 style={{ fontFamily: 'var(--font-kode-mono)' }} className="text-[36px] font-bold font-[var(--font-kode-mono)]">CORE36</h1>
           </div>
         </div>
-        <Link href="https://airtable.com/appioeKoEbAu7HxPJ/pagDslvnONSZ71fsX/form"  
+        <Link href="https://5adne.share.hsforms.com/2mJaj2LW8T-iKhXQGwuztlQ"  
         style={{ fontFamily: 'var(--font-roboto-mono)' }}
         className="
           flex
