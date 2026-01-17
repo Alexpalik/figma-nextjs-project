@@ -4,6 +4,7 @@ import "./globals.css";
 import ManifestSection from "@/components/section2";
 import TechnicalCoreSection from "@/components/section3";
 import SelectivitySection from "@/components/section4";
+import IntroductionSection from "@/components/section1";
 
 const kodeMono = Kode_Mono({
   variable: "--font-kode-mono",
@@ -13,7 +14,7 @@ const kodeMono = Kode_Mono({
 const robotoMono = Roboto_Mono({
   variable: "--font-roboto-mono",
   subsets: ["latin"],
-  weight: ["400"],
+  weight: ["400", "300", "100"],
 });
 
 const notoSans = Noto_Sans({
@@ -44,8 +45,14 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${kodeMono.variable} ${robotoMono.variable} ${notoSans.variable} antialiased`}
+        style={{
+          backgroundColor: '#0053A2',
+          backgroundBlendMode: 'overlay',
+          opacity: 0.97 
+        }}
       >
         {children}
+        <IntroductionSection />
         <ManifestSection />
         <TechnicalCoreSection />
         <SelectivitySection />

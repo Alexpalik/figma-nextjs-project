@@ -11,34 +11,34 @@ export default function SelectivitySection() {
         
         {/* Header - Blue Box */}
         <div className="!mb-[80px]">
-          <div className="bg-[#0053A2] !px-[16px] !py-[8px] inline-block">
-            <h2 style={{ fontFamily: 'var(--font-kode-mono)' }} className="text-[#D5D5DC] font-mono !text-[24px] tracking-[0.2em]  font-bold">
+          <div className="bg-[#0053A2] !px-[8px] !py-[4px] inline-block">
+            <h2 style={{ fontFamily: 'var(--font-kode-mono)' }} className="flex items-center justify-center text-[#D5D5DC] font-mono  tracking-[0.3em] font-bold  !px-[16px] !py-[4px] w-[261px] h-[32px] text-[20px] text-center">
               Selectivity
             </h2>
           </div>
         </div>
 
         {/* Text Content */}
-        <div className="space-y-10 font-[var(--font-noto-sans)] leading-relaxed text-[15px] text-[19px] font-[300]">
-          <p className="font-[300] !mb-[30px]">
+        <div className="space-y-10  leading-relaxed text-[15px] md:text-[17px] font-[300] max-w-[869px]"  style={{ backgroundImage: 'url(/section4.svg)', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: "contain",  fontFamily: 'var(--font-roboto-mono)'}}>
+          <p className="font-[300] !mb-[50px]">
             The process will move swiftly on a rolling basis, with introductory calls taking place within 48 hours after nomination. We anticipate concluding the full process within one week.
           </p>
 
-          <ul className="space-y-2 !mb-[30px]">
+          <ul className="space-y-2 !mb-[80px]">
             {[
-              "Stage 1: Nomination or invitation",
+              " Stage 1: Nomination or invitation",
               "Stage 2: Introductory conversation",
               "Stage 3: Technical conversation",
               "Stage 4: Selection"
             ].map((item, index) => (
               <li key={index} className="flex items-start ">
-                <span className="text-[#0053A2] font-mono font-bold mr-2 text-[19px] !font-[400]">•</span>
-                <span className="text-[#0053A2] font-mono text-[19px] !font-[400]">{item}</span>
+                <span className="text-[#0053A2] font-mono font-bold mr-2 md:text-[17px] !font-[400] !mr-[5px]">• </span>
+                <span className="text-[#0053A2] font-mono md:text-[17px] !font-[400]">{item}</span>
               </li>
             ))}
           </ul>
 
-          <p className="font-[300]">
+          <p className="font-[300] !mb-[80px]">
             The selection committee is made up of technical leaders from ElevenLabs, Anthropic, ASML, Tesla, Oxford University, Harvard University, Stanford University.
           </p>
 
@@ -52,15 +52,8 @@ export default function SelectivitySection() {
 
       {/* 2. Partners Logo Strip - Fixed Dimensions 205x71 */}
       {/* We use border-t and border-l on the container, and border-r/border-b on items to create a perfect grid even when wrapping */}
-      <div className="w-full flex justify-center">
-      <div
-        className="
-          grid
-          grid-cols-1
-          xl:grid-cols-7
-          border-[1px] border-[#0053A2]
-        "
-      >
+      {/* <div className="w-full flex justify-center">
+        <div className="flex flex-wrap justify-center border-t border-l border-[#0053A2]">
           
           <PartnerCell name="ElevenLabs" pattern="diagonal1" />
           <PartnerCell name="Anthropic" pattern="plain" />
@@ -71,21 +64,30 @@ export default function SelectivitySection() {
           <PartnerCell name="Stanford University" pattern="diagonal3" />
 
         </div>
-      </div>
+      </div> */}
 
       {/* 3. Bottom Treasury Seal */}
-      <div className="!p-12 !py-[200px]">
-        <div className="relative w-[120px] h-[120px] opacity-80 mix-blend-multiply">
+      <div className="!p-12 !py-[200px] flex flex-col items-center justify-center gap-[10px]">
+        <div className="relative w-[120px] h-[120px] opacity-50 mix-blend-multiply">
            <Image
-            src="/logo2.png" 
+            src="/icon_blue.png" 
             alt="Department of Treasury Seal"
             fill
             className="object-contain"
           />
         </div>
+        <div>
+           <Image
+            src="/Core36.png" 
+            alt="Core36"
+            width={80}
+            height={80}
+            className="object-contain"
+          />
+        </div>
       </div>
 
-    </section>
+    </section>  
   );
 }
 
@@ -94,7 +96,7 @@ function PartnerCell({ name, pattern }: { name: string, pattern: 'diagonal' | 'd
   return (
     // Added w-[205px] and h-[71px] here
     // Added border-r and border-b to maintain the grid lines
-    <div className="relative w-[205px] h-[71px]  bg-[#D9D9DF] flex items-center justify-center overflow-hidden group border-[1px] border-[#0053A2]">
+    <div className="relative w-[205px] h-[71px] border-r border-b border-[#0053A2] bg-[#D9D9DF] flex items-center justify-center overflow-hidden group" >
       
       {/* 1. Background Pattern Layer */}
       {pattern === 'diagonal' && (

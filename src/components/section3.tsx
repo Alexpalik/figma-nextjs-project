@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function TechnicalCoreSection() {
   return (
     <>
-    <div className="!w-full relative !mb-[-1px] !mt-[-300px]">
+    {/* <div className="!w-full relative !mb-[-1px] !mt-[-300px]">
         <Image 
           src="/Group (5).png" // Replace with your actual image path
           alt="Technical Core Header"
@@ -13,25 +13,46 @@ export default function TechnicalCoreSection() {
           className="w-full h-auto"
         />
        
-      </div>
+      </div> */}
       <section className="!bg-[#0053A2] text-white flex flex-col items-center !px-6 !py-[200px]">
       
       {/* 1. FULL WIDTH HEADER IMAGE */}
+
       
       {/* 2. TEXT CONTENT AREA */}
       <div className="relative w-full flex flex-col items-center justify-center px-6 py-24 overflow-hidden">
+         {/* Background image layer */}
+        <div 
+          className="absolute inset-0 z-0"
+          style={{ 
+            backgroundImage: 'url(/section3.svg)', 
+            backgroundPosition: 'center', 
+            backgroundRepeat: 'no-repeat', 
+            backgroundSize: 'contain',  
+           
+          }}
+        />
         
-       
 
         <div className="relative z-10 w-full max-w-[800px] flex flex-col items-center text-center">
           
           {/* Main Title */}
-          <h2 style={{ fontFamily: 'var(--font-kode-mono)' }} className="text-3xl md:text-[32px] font-mono tracking-[0.3em] uppercase mb-16 md:mb-24 font-bold leading-tight !pb-[100px]">
-            Treasury&apos;s Technical Core
-          </h2>
+          {/* <h2 style={{ fontFamily: 'var(--font-kode-mono)' }} className="text-3xl md:text-[32px] font-mono tracking-[0.3em] uppercase mb-16 md:mb-24 leading-tight !pb-[100px]">
+            
+          </h2> */}
+
+          <div className="bg-[#D5D5DC] !mb-[100px]">
+          <h2 style={{ fontFamily: 'var(--font-kode-mono)' }} className="text-[#0053A2] font-mono  tracking-[0.3em] font-bold  !px-[16px] !py-[4px] w-[550px] h-[36px] text-[20px] text-center">
+              Treasury&apos;s Technical Core
+           </h2>
+          </div>
 
           {/* Content Paragraphs */}
-          <div className="flex flex-col gap-10 md:gap-14 text-lg md:text-[20px] font-mono leading-relaxed opacity-90 max-w-[750px]">
+          <div className="flex flex-col gap-10 md:gap-14 text-lg md:text-[18px] leading-relaxed opacity-100 max-w-[700px] font-[var(--font-roboto-mono)] text-[#D9D9DF]
+          "
+          
+          style={{ fontFamily: 'var(--font-roboto-mono)' }}
+          >
             <p className="tracking-wide">
               You&apos;ll be part of a concentrated effort to raise the standard of engineering inside one of the most consequential institutions in the world.
             </p>
