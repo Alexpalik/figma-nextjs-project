@@ -20,15 +20,19 @@ export default function TechnicalCoreSection() {
 
       
       {/* 2. TEXT CONTENT AREA */}
-      <div className="relative w-full flex flex-col items-center justify-center px-6 py-24 overflow-hidden">
+      <div className="relative w-full flex flex-col items-center justify-center px-6 py-24">
          {/* Background image layer */}
         <div 
           className="absolute inset-0 z-0"
           style={{ 
+            top: '-50px',    // Moves the image up beyond the text
+            bottom: '-50px', // Moves the image down beyond the text
+            left: 0,
+            right: 0,
             backgroundImage: 'url(/section3.svg)', 
             backgroundPosition: 'center', 
             backgroundRepeat: 'no-repeat', 
-            backgroundSize: 'contain',  
+            backgroundSize: 'auto 550px',  
            
           }}
         />

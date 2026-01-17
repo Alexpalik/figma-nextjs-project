@@ -7,7 +7,7 @@ export default function ManifestSection() {
   return (
     
        
-    <section className="relative min-h-screen bg-[#D9D9DF] text-[#161519] !py-24 !px-6 flex flex-col items-center !pb-[30px] !pt-[120px]" >
+    <section className="relative min-h-screen bg-[#D9D9DF] text-[#161519] !py-24 !px-6 flex flex-col items-center md:!pb-[70px] !pt-[120px]" >
     
       {/* 1. TOP IMAGE AREA */}
       {/* This is where you put your file. The blue label sits on top of it. */}

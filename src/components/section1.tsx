@@ -71,7 +71,7 @@ export default function IntroductionSection() {
       alt="Pixelbar"
       width={1400}
       height={40}
-      className="absolute bottom-0 left-0 w-screen h-[100px] object-cover"
+      className="absolute bottom-0 left-0 w-screen h-[169px] object-cover"
 
     />
         

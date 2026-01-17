@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#0053A2] text-white flex flex-col justify-between xl:justify-normal items-center"
+    <div className="min-h-screen bg-[#0053A2] text-white flex flex-col justify-between  items-center"
       style={{
        backgroundColor: '#0053A2',
        backgroundBlendMode: 'overlay',

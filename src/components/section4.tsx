@@ -1,4 +1,3 @@
-import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -7,19 +6,34 @@ export default function SelectivitySection() {
     <section className="bg-[#D9D9DF] text-[#161519] w-full flex flex-col items-center py-24 relative overflow-hidden">
       
       {/* 1. Main Content Area */}
-      <div className="w-full max-w-[971px] !px-6 !py-[100px] !mb-24 !pt-[200px]">
+      {/* Added min-h-[850px] to ensure the section stays tall enough for the image */}
+      <div className="relative w-full max-w-[971px] !px-6 !py-[100px] !mb-24 !pt-[120px] min-h-[850px] flex flex-col items-center md:align-start">
         
-        {/* Header - Blue Box */}
-        <div className="!mb-[80px]">
+        {/* NEW BACKGROUND LAYER: This prevents the image from being cut */}
+        <div 
+          className="absolute inset-0 z-0 pointer-events-none"
+          style={{ 
+            backgroundImage: 'url(/section4.svg)', 
+            backgroundPosition: ' center 220px', 
+            backgroundRepeat: 'no-repeat', 
+            backgroundSize: "auto 600px", // Increased height to overpass text
+          }}
+        />
+
+        {/* Header - Blue Box (Relative z-10 to stay above background) */}
+        <div className="relative z-10 w-full !mb-[80px]">
           <div className="bg-[#0053A2] !px-[8px] !py-[4px] inline-block">
-            <h2 style={{ fontFamily: 'var(--font-kode-mono)' }} className="flex items-center justify-center text-[#D5D5DC] font-mono  tracking-[0.3em] font-bold  !px-[16px] !py-[4px] w-[261px] h-[32px] text-[20px] text-center">
+            <h2 style={{ fontFamily: 'var(--font-kode-mono)' }} className="flex items-center justify-center text-[#D5D5DC] font-mono tracking-[0.3em] font-bold !px-[16px] !py-[4px] w-[261px] h-[32px] text-[20px] text-center">
               Selectivity
             </h2>
           </div>
         </div>
 
-        {/* Text Content */}
-        <div className="space-y-10  leading-relaxed text-[15px] md:text-[17px] font-[300] max-w-[869px]"  style={{ backgroundImage: 'url(/section4.svg)', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: "contain",  fontFamily: 'var(--font-roboto-mono)'}}>
+        {/* Text Content (Relative z-10 to stay above background) */}
+        <div 
+          className="relative z-10 space-y-10 leading-relaxed text-[15px] md:text-[17px] font-[300] max-w-[869px] w-full"  
+          style={{ fontFamily: 'var(--font-roboto-mono)' }}
+        >
           <p className="font-[300] !mb-[50px]">
             The process will move swiftly on a rolling basis, with introductory calls taking place within 48 hours after nomination. We anticipate concluding the full process within one week.
           </p>
@@ -43,8 +57,8 @@ export default function SelectivitySection() {
           </p>
 
           <div className="flex justify-end !pt-8">
-          <Link href="https://5adne.share.hsforms.com/2mJaj2LW8T-iKhXQGwuztlQ"  className="flex justify-center items-center border border-[#0053A2] text-[#0053A2] !px-[16px] !py-[8px] text-[14px] tracking-[0.2em] font-mono hover:bg-[#0053A2] hover:text-white transition-all uppercase font-[var(--font-noto-sans)] max-w-[154px] h-[41px] w-full bg-transparent shadow-[3px_3px_0px_0px_#0053a233]">
-            NOMINATION
+            <Link href="https://5adne.share.hsforms.com/2mJaj2LW8T-iKhXQGwuztlQ" className="flex justify-center items-center border border-[#0053A2] text-[#0053A2] !px-[16px] !py-[8px] text-[14px] tracking-[0.2em] font-mono hover:bg-[#0053A2] hover:text-white transition-all uppercase font-[var(--font-noto-sans)] max-w-[154px] h-[41px] w-full bg-transparent shadow-[3px_3px_0px_0px_#0053a233]">
+              NOMINATION
             </Link>
           </div>
         </div>
@@ -67,8 +81,8 @@ export default function SelectivitySection() {
       </div> */}
 
       {/* 3. Bottom Treasury Seal */}
-      <div className="!p-12 !py-[200px] flex flex-col items-center justify-center gap-[10px]">
-        <div className="relative w-[120px] h-[120px] opacity-50 mix-blend-multiply">
+      <div className="!p-12 !py-[20px] flex flex-col items-center justify-center gap-[10px] md:!pb-[200px]">
+        <div className="relative w-[80px] h-[80px] opacity-50 mix-blend-multiply">
            <Image
             src="/icon_blue.png" 
             alt="Department of Treasury Seal"
@@ -76,15 +90,7 @@ export default function SelectivitySection() {
             className="object-contain"
           />
         </div>
-        <div>
-           <Image
-            src="/CORE36.png" 
-            alt="Core36"
-            width={80}
-            height={80}
-            className="object-contain"
-          />
-        </div>
+        
       </div>
 
     </section>  
