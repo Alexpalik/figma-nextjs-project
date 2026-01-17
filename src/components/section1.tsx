@@ -43,8 +43,8 @@ export default function IntroductionSection() {
         </div>
          */}
 
-         <div className="w-[90%] max-w-[1200px] h-auto !mb-[100px]">
-        <div className="flex md:justify-between items-center gap-8 mb-20 ">
+         <div className="md:w-[90%] max-w-[1200px] h-auto !mb-[100px]">
+        <div className="flex justify-center md:justify-between items-center gap-8 mb-20 ">
             <div className="flex-none !pb-[50px] md:absolute md:left-0 2xl:relative 2xl:left-auto">
                 <h1 style={{ fontFamily: 'var(--font-kode-mono)' }} className="text-[40px] md:text-[128px] text-[#FFFFFF] m-0 font-bold tracking-wider text-center md:text-left">TL;DR</h1>
             </div>
