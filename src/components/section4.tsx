@@ -81,7 +81,7 @@ export default function SelectivitySection() {
       </div> */}
 
       {/* 3. Bottom Treasury Seal */}
-      <div className="!p-12 !py-[20px] flex flex-col items-center justify-center gap-[10px] md:!pb-[200px]">
+      <div className="!p-12 !py-[20px] flex flex-col items-center justify-center gap-[10px] md:!pb-[100px]">
         <div className="relative w-[80px] h-[80px] opacity-50 mix-blend-multiply">
            <Image
             src="/icon_blue.png" 
