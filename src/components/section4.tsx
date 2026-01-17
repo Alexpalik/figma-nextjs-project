@@ -78,7 +78,7 @@ export default function SelectivitySection() {
         </div>
         <div>
            <Image
-            src="/Core36.png" 
+            src="/CORE36.png" 
             alt="Core36"
             width={80}
             height={80}
