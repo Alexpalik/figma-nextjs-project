@@ -20,7 +20,7 @@ export default function TechnicalCoreSection() {
 
       
       {/* 2. TEXT CONTENT AREA */}
-      <div className="relative w-full flex flex-col items-center justify-center px-6 py-24">
+      <div className="relative w-full flex flex-col items-center justify-center px-6 py-24 overflow-hidden md:overflow-visible">
          {/* Background image layer */}
         <div 
           className="absolute inset-0 z-0"
