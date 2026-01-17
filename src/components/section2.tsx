@@ -41,7 +41,7 @@ export default function ManifestSection() {
                     autoPlay
                     muted
                 >
-                    <source src="/https://pzeyn5fvpj2b2ne1.public.blob.vercel-storage.com/c36_v2_compressed.mp4" type="video/mp4" />
+                    <source src="https://pzeyn5fvpj2b2ne1.public.blob.vercel-storage.com/c36_v2_compressed.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
                 )}
