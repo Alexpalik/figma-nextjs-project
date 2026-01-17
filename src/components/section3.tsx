@@ -52,7 +52,7 @@ export default function TechnicalCoreSection() {
           </div>
 
           {/* Content Paragraphs */}
-          <div className="flex flex-col gap-10 md:gap-14 text-lg md:text-[18px] leading-relaxed opacity-100 max-w-[700px] font-[var(--font-roboto-mono)] text-[#D9D9DF]
+          <div className="flex flex-col gap-10 md:gap-14 text-16px md:text-[18px] leading-relaxed opacity-100 max-w-[700px] font-[var(--font-roboto-mono)] text-[#D9D9DF]
           "
           
           style={{ fontFamily: 'var(--font-roboto-mono)' }}

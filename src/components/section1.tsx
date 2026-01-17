@@ -51,7 +51,7 @@ export default function IntroductionSection() {
             
         </div>
 
-        <div className="flex justify-between items-center gap-8 mb-12 md:!pt-[100px]">
+        <div className="flex justify-between items-center md:gap-8 mb-12 md:!pt-[100px]">
             <div className="flex-none">
                 
             </div>

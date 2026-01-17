@@ -7,7 +7,7 @@ export default function SelectivitySection() {
       
       {/* 1. Main Content Area */}
       {/* Added min-h-[850px] to ensure the section stays tall enough for the image */}
-      <div className="relative w-full max-w-[971px] !px-6 !py-[100px] !mb-24 !pt-[120px] min-h-[850px] flex flex-col items-center md:align-start">
+      <div className="relative w-full max-w-[971px] !px-6 !py-[100px] md:!mb-24 !pt-[120px] min-h-[850px] flex flex-col items-center md:align-start">
         
         {/* NEW BACKGROUND LAYER: This prevents the image from being cut */}
         <div 
@@ -31,7 +31,7 @@ export default function SelectivitySection() {
 
         {/* Text Content (Relative z-10 to stay above background) */}
         <div 
-          className="relative z-10 space-y-10 leading-relaxed text-[15px] md:text-[17px] font-[300] max-w-[869px] w-full"  
+          className="relative z-10 space-y-10 leading-relaxed text-[16px] md:text-[17px] font-[300] max-w-[869px] w-full"  
           style={{ fontFamily: 'var(--font-roboto-mono)' }}
         >
           <p className="font-[300] !mb-[50px]">
