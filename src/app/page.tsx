@@ -32,6 +32,7 @@ export default function Home() {
         <Link href="https://5adne.share.hsforms.com/2mJaj2LW8T-iKhXQGwuztlQ"  
         style={{ fontFamily: 'var(--font-roboto-mono)' }}
         className="
+          !hidden md:!block
           flex
           border border-white border-[0.5px] 
           !px-[10px] !py-[5px] 

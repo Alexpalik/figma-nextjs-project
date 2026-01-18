@@ -51,17 +51,42 @@ export default function IntroductionSection() {
             
         </div>
 
-        <div className="flex justify-between items-center md:gap-8 mb-12 md:!pt-[100px]">
+        <div className="flex  justify-between items-center md:gap-8 mb-12 md:!pt-[100px]">
             <div className="flex-none">
                 
             </div>
-            
-            <div style={{ fontFamily: 'var(--font-roboto-mono)' }} className="flex flex-col gap-6 max-w-[600px] text-[#FFFFFF] tracking-wide text-[18px]">
-               <p className="m-0 mb-8 leading-relaxed text-base ">Core36 is a three-month, full-time technical residency designed to prepare engineers to step into the technical core of the U.S. Treasury.</p>
-                <p className="m-0 mb-8 leading-relaxed text-base">Committee-led selection by senior <span className="font-bold">technical leaders</span> from <span className="font-bold">Anthropic, Google DeepMind, Tesla, ElevenLabs, Harvard University, Stanford University</span>.</p>
-                <p className="m-0 mb-8 leading-relaxed text-base">Nomination-only entry, however we know not everyone is embedded in existing networks so you can pitch to us [email]. </p>
-                <p className="m-0 mb-8 leading-relaxed text-base">Built by founding engineers at <span className="font-bold">Gemini, OpenAI. </span></p>
+            <div className="flex flex-col gap-[40px]">
+              <div style={{ fontFamily: 'var(--font-roboto-mono)' }} className="flex flex-col gap-6 max-w-[600px] text-[#FFFFFF] tracking-wide text-[18px]">
+                <p className="m-0 mb-8 leading-relaxed text-base ">We back founder-level engineers who will <span className="font-bold">transform the U.S. Treasury.</span> On February 1, they will join an intensive eight-week lab. By April 15, they begin building something extraordinary—the AI-first engineering team for our $30tn economy</p>
+                  <p className="m-0 mb-8 leading-relaxed text-base">To be selected, you must be nominated (you can also request nominations on X). The selection committee includes<span className="font-bold"> Tech Leads from Gemini, Anthropic, Tesla, and Stanford</span></p>
+                  <p className="m-0 mb-8 leading-relaxed text-base">Core36 provides $195k to engineers building AI that rearchitects U.S. finance. <span className="font-bold">Nominate the engineer who belongs here</span></p>
+                
+              </div>
+                <Link href="https://5adne.share.hsforms.com/2mJaj2LW8T-iKhXQGwuztlQ"  
+                  style={{ fontFamily: 'var(--font-roboto-mono)' }}
+                  className="
+                    text-white
+                    flex
+                    border border-white border-[0.5px] 
+                    !px-[10px] !py-[5px] 
+                    text-center
+                    justify-center
+                    items-center
+                    !font-[400]
+                    max-w-[154px] h-[41px] w-full !text-[15px]
+                    shadow-[3px_3px_0px_0px_#2100C7]
+                    hover:bg-[white] hover:text-[#0053A2] transition-all
+                    tracking-[2px]
+                    
+                    "
+                    
+                    
+                
+                  >NOMINATION
+                  </Link> 
             </div>
+            
+           {/* */}
         </div>
     </div>
 
